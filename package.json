@@ -2,7 +2,7 @@
   "name": "seigneur",
   "version": "1.0.0",
   "description": "community chat application ",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "test"
   },
