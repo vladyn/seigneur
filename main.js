@@ -6,6 +6,7 @@ function createWindow () {
     width: 640,
     height: 480,
     // frame: false,
+    // Note: Borderless Mode does not work on Mac.
     webPreferences: {
       nodeIntegration: true
     }
@@ -14,8 +15,10 @@ function createWindow () {
   // and load the index.html of the app.
   browserWindow.loadFile('index.html')
 
+  console.log(fillPlaceholder);
+
   // Open the DevTools.
-  // browserWindow.webContents.openDevTools()
+  browserWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
@@ -40,6 +43,19 @@ app.on('activate', () => {
   }
 })
 
+// TODO: add this
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+const randomNick = [
+  "LazyBanana97",
+  "TheLegend",
+  "TheBestPersonToExist",
+  "ToiletDestroyer123",
+  "BlizzardLover7455",
+  "BigBird016",
+  "NotAHaloFan9",
+  "TheBestMechanicInSweden"
+]
+
 

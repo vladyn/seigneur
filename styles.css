@@ -1,14 +1,22 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #efefef;
     text-align: center;
     font-family: "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 main {
     display: flex;
-    flex-flow: column;
-    flex-direction: column;
+    flex-flow: row;
+    flex-direction: row;
 }
 
-section {
+form {
+    display: flex;
+    flex-direction: column;
 }
