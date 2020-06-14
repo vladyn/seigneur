@@ -4,7 +4,8 @@
   "description": "community chat application ",
   "main": "main.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "electron": "electron ."
   },
   "repository": {
     "type": "git",

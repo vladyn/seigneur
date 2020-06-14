@@ -3,3 +3,12 @@ body {
     text-align: center;
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
+
+main {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+}
+
+section {
+}
