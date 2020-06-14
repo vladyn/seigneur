@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/vladyn/seigneur/issues"
   },
-  "homepage": "https://github.com/vladyn/seigneur#readme"
+  "homepage": "https://github.com/vladyn/seigneur#readme",
+  "devDependencies": {
+    "electron": "^9.0.4"
+  }
 }
