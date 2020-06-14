@@ -1,0 +1,27 @@
+{
+  "name": "seigneur",
+  "version": "1.0.0",
+  "description": "community chat application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vladyn/seigneur.git"
+  },
+  "keywords": [
+    "chat",
+    "social",
+    "communication",
+    "chatting",
+    "electron",
+    "javascript"
+  ],
+  "author": "Varbanov, N&V",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladyn/seigneur/issues"
+  },
+  "homepage": "https://github.com/vladyn/seigneur#readme"
+}
