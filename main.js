@@ -3,10 +3,13 @@ const { app, BrowserWindow } = require('electron')
 function createWindow () {
   // Create the browser window.
   const browserWindow = new BrowserWindow({
-    width: 640,
-    height: 480,
-    // frame: false,
-    // Note: Borderless Mode does not work on Mac.
+    width: 840,
+    height: 490,
+    resizable: false,
+    frame: false,
+    fullscreenable: false,
+    darkTheme: true,
+    hasShadow: false,
     webPreferences: {
       nodeIntegration: true
     }

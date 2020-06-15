@@ -3,8 +3,9 @@ html, body {
 }
 
 body {
-    background-color: #efefef;
+    background: linear-gradient(to bottom, rgb(31, 31, 31), rgba(31, 31, 31, 0.9));
     text-align: center;
+    color: #ffffff;
     font-family: "Helvetica Neue", Arial, sans-serif;
     display: flex;
     align-items: center;
@@ -20,3 +21,25 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+label,
+input[type=text],
+input[type=password],
+input[type=email] {
+    margin-bottom: 1em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+input, button, textarea, :focus {
+    outline: none;
+}
+
