@@ -10,8 +10,8 @@ const randomNickArray = [
 ]
 
 function randomize(array) {
-  return randomNickArray.sort(() => Math.random() - 0.5).pop();
+  return array.sort(() => Math.random() - 0.5).pop();
 }
 
-exports.randomNickname = randomize(randomNickArray);
+export const randomNickname = randomize(randomNickArray);
 

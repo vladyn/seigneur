@@ -33,5 +33,24 @@
             </div>
         </section>
     </main>
+    <script>
+      const randomNickArray = [
+        "LazyBanana97",
+        "TheLegend",
+        "TheBestPersonToExist",
+        "ToiletDestroyer123",
+        "BlizzardLover7455",
+        "BigBird016",
+        "NotAHaloFan9",
+        "TheBestMechanicInSweden"
+      ];
+        const nick = document.getElementById('nick');
+        const randomNick = randomize(randomNickArray);
+        nick.setAttribute('placeholder', randomNick);
+
+        function randomize(array) {
+          return array.sort(() => Math.random() - 0.5).pop();
+        }
+    </script>
 </body>
 </html>
