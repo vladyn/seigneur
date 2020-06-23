@@ -10,6 +10,7 @@ function createWindow () {
     fullscreenable: false,
     darkTheme: true,
     hasShadow: false,
+    movable: true,
     webPreferences: {
       nodeIntegration: true
     }
@@ -43,9 +44,4 @@ app.on('activate', () => {
     createWindow()
   }
 })
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
-
-
 

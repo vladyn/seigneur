@@ -23,24 +23,119 @@ form {
 }
 
 label,
-button[type=submit],
-input[type=text],
-input[type=password],
-input[type=email] {
+button[type=submit]{
+    padding: 6px;
     border-radius: 7px;
+}
+
+input[type=password]:focus {
+    border-radius:7px;
+    margin-bottom: 1em;
+    outline: none;
+    border: 1px solid #ffe29f;
+    color: #243120;
+    padding: 6px;
+}
+input[type=email] {
+    border-radius:7px;
+    margin-bottom: 1em;
+    outline: none;
+    border: 1px solid #ffe29f;
+    color: #243120;
     padding: 6px;
 }
 
-input[type=password],
-input[type=email] {
-    margin-bottom: 1em;}
-
 input[type=text]:focus {
+    border-radius:7px;
+    margin-bottom: 1em;
     outline: none;
-    border: 1px solid #a0d18c;
-    color: #2d9fd9;
+    border: 1px solid #ffe29f;
+    color: #243120;
+    padding: 6px;
 }
-{}
+.container
+{
+    background: linear-gradient(to right, #ffe29f,#ffa99f,#ffe29f);
+    background-size: 500px;
+    transition: 0.5s;
+    color: white;
+}
+.container:hover
+{
+    background-position-x: 300%;
+    transform: translateY(-15px);
+}
+.container:after
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+.container:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+    transform: scale(0);
+    filter: blur(2px);
+    transition: 0.5s;
+    z-index: -1;
+}
+.container:hover:before
+{
+    transform: scale(1);
+    bottom: -15px;
+}
+.logo
+{
+    background-size: 500px;
+    transition: 0.5s;
+    padding: 6px;
+}
+.logo:hover
+{
+    background-position-x: 300%;
+    transform: translateY(-3px);
+}
+.logo:after
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+.logo:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+    transform: scale(0);
+    filter: blur(2px);
+    transition: 0.5s;
+    z-index: -1;
+}
+.logo:hover:before
+{
+    transform: scale(1);
+    bottom: -15px;
+}
 
 ::-webkit-scrollbar {
     display: none;
