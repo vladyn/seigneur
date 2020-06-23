@@ -1,12 +1,13 @@
 {
-  "name": "seigneur",
-  "version": "1.0.0",
+  "name": "Seigneur",
+  "version": "0.0.1",
   "description": "community chat application ",
   "main": "main.js",
   "scripts": {
     "test": "test",
     "electron": "electron ."
   },
+
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/vladyn/seigneur.git"
@@ -27,5 +28,8 @@
   "homepage": "https://github.com/vladyn/seigneur#readme",
   "devDependencies": {
     "electron": "^9.0.4"
+  },
+  "dependencies": {
+    "update-electron-app": "^1.5.0"
   }
 }

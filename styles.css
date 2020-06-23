@@ -55,7 +55,7 @@ input[type=text]:focus {
 }
 .container
 {
-    background: linear-gradient(to right, #ffe29f,#ffa99f,#ffe29f);
+    background: linear-gradient(to right, #d2fb48,#acf85a,#d2fb48);
     background-size: 500px;
     transition: 0.5s;
     color: white;
@@ -63,7 +63,7 @@ input[type=text]:focus {
 .container:hover
 {
     background-position-x: 300%;
-    transform: translateY(-15px);
+    transform: rotateZ(1deg) translateY(-5px);
 }
 .container:after
 {
@@ -104,11 +104,11 @@ input[type=text]:focus {
 .logo:hover
 {
     background-position-x: 300%;
-    transform: translateY(-3px);
+    transform: translateY(-12px);
 }
 .logo:after
 {
-    content: '';
+    content: 'Signed up!';
     position: fixed;
     top: 0;
     left: 0;
@@ -132,6 +132,48 @@ input[type=text]:focus {
     z-index: -1;
 }
 .logo:hover:before
+{
+    transform: scale(1);
+    bottom: -15px;
+}
+
+.inputs
+{
+    background-size: 500px;
+    transition: 0.5s;
+    padding: 6px;
+}
+.inputs:hover
+{
+    background-position-x: 300%;
+    transform: rotateZ(-1deg) translateY(-3px);
+}
+.inputs:after
+{
+    content: 'Signed up!';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+.inputs:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+    transform: scale(0);
+    filter: blur(2px);
+    transition: 0.5s;
+    z-index: -1;
+}
+.inputs:hover:before
 {
     transform: scale(1);
     bottom: -15px;

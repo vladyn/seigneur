@@ -16,6 +16,7 @@ function createWindow () {
     }
   })
 
+
   // and load the index.html of the app.
   browserWindow.loadFile('index.html')
 
@@ -44,4 +45,3 @@ app.on('activate', () => {
     createWindow()
   }
 })
-
