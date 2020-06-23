@@ -10,7 +10,6 @@ function createWindow () {
     fullscreenable: false,
     darkTheme: true,
     hasShadow: false,
-    movable: true,
     webPreferences: {
       nodeIntegration: true
     }
