@@ -25,31 +25,52 @@ form {
 label,
 button[type=submit]{
     padding: 6px;
-    border-radius: 7px;
+    border-radius: 5px;
+}
+
+button[type=submit]:focus{
+    padding: 6px;
+    border-radius: 50px;
 }
 
 input[type=password]:focus {
-    border-radius:7px;
+    border-radius: 50px;
     margin-bottom: 1em;
     outline: none;
-    border: 1px solid #ffe29f;
-    color: #243120;
+    border: 1px solid #ffffff;
+    color: #000000;
     padding: 6px;
 }
-input[type=email] {
-    border-radius:7px;
-    margin-bottom: 1em;
+input[type=email]:focus {
+    border-radius: 50px;
+    margin-bottom: 2em;
     outline: none;
-    border: 1px solid #ffe29f;
-    color: #243120;
+    border: 1px solid #ffffff;
+    color: #000000;
     padding: 6px;
+    transition: 1s;
+}
+
+input[type=email] {
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    margin-bottom: 1em;
+    border-radius: 5px;
 }
 
 input[type=text]:focus {
-    border-radius:7px;
+    border-radius: 50px;
     margin-bottom: 1em;
     outline: none;
-    border: 1px solid #ffe29f;
+    border: 1px solid #ffffff;
     color: #243120;
     padding: 6px;
 }
@@ -63,7 +84,7 @@ input[type=text]:focus {
 .container:hover
 {
     background-position-x: 300%;
-    transform: rotateZ(1deg) translateY(-5px);
+    transform: translateX(-3px);
 }
 .container:after
 {
@@ -108,7 +129,7 @@ input[type=text]:focus {
 }
 .logo:after
 {
-    content: 'Signed up!';
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
@@ -137,6 +158,16 @@ input[type=text]:focus {
     bottom: -15px;
 }
 
+#passwordArea {
+    position: relative;
+}
+
+#passToggle {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+}
+
 .inputs
 {
     background-size: 500px;
@@ -146,11 +177,11 @@ input[type=text]:focus {
 .inputs:hover
 {
     background-position-x: 300%;
-    transform: rotateZ(-1deg) translateY(-3px);
+    transform: translateX(3px);
 }
 .inputs:after
 {
-    content: 'Signed up!';
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
