@@ -52,9 +52,37 @@
         const randomNick = randomize(randomNickArray);
         nick.setAttribute('placeholder', randomNick);
 
-        function randomize(array) {
+      const randomEmailArray = [
+          "lazybanana@gmail.com",
+          "thelegend@epicguys.me",
+          "tbpte@hotmail.com",
+          "toiletobliterator@live.com",
+          "blizzardlover@gmail.com",
+          "bigbird@yahoo.com",
+          "notahalofan@xbox.com",
+          "swedishmechanic@mechs.com"
+      ];
+      const email = document.getElementById('email');
+      const randomEmail = randomize(randomEmailArray);
+      email.setAttribute('placeholder', randomEmail);
+
+      const randomPassArray = [
+          "ilovebananas12",
+          "haloisagoodgame69",
+          "watertwiceaday",
+          "password1234",
+          "qwertyuiop",
+          "qwerty12",
+          "nooneusesazerty",
+          "strongpassword"
+      ];
+      const password = document.getElementById('showPassword');
+      const randomPass = randomize(randomPassArray);
+      password.setAttribute('placeholder', randomPass);
+
+      function randomize(array) {
           return array.sort(() => Math.random() - 0.5).pop();
-        }
+      }
     </script>
     <script>
         function passwordShow() {

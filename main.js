@@ -12,6 +12,7 @@ function createWindow () {
     hasShadow: false,
     // alwaysOnTop: true,
     webPreferences: {
+      devTools: false,
       nodeIntegration: true
     }
   })

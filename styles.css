@@ -6,7 +6,7 @@ body {
     background: linear-gradient(to bottom, rgb(31, 31, 31), rgba(31, 31, 31, 0.9));
     text-align: center;
     color: #ffffff;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif, 'Nunito';
     display: flex;
     align-items: center;
 }
@@ -39,12 +39,19 @@ button[type=submit]{
     position: absolute;
     top: -12px;
     left: 2px;
-    color: red;
-    background-color: darkgray;
+    color: #ffffff;
+    background: linear-gradient(#08050f, #292a2d);
 }
 
 .field-group > input {
     display: block;
+}
+
+.field-group:hover
+{
+    transition: 0.5s;
+    background-position-x: 300%;
+    transform: translateX(-3px);
 }
 
 button[type=submit]:focus{
