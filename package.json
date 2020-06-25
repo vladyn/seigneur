@@ -7,7 +7,6 @@
     "test": "test",
     "electron": "electron ."
   },
-
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/vladyn/seigneur.git"

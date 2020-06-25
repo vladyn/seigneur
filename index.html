@@ -15,10 +15,14 @@
         <section class="introduce">
             <div class="form">
                 <form action="">
-                    <label for="nick" id="randomize">Username:</label>
-                    <input class="inputs" id="nick" type="text" placeholder="BigBird016" minlength="4" required>
-                    <label for="email">Email:</label>
-                    <input class="inputs" id="email" type="email" placeholder="user@site.com" minlength="6" required>
+                    <div class="field-group">
+                        <input class="inputs" id="nick" type="text" placeholder="BigBird016" minlength="4" required>
+                        <label for="nick" id="randomize">Username:</label>
+                    </div>
+                    <div class="field-group">
+                        <input class="inputs" id="email" type="email" placeholder="user@site.com" minlength="6" required>
+                        <label for="email">Email:</label>
+                    </div>
                     <div id="passwordArea">
                         <label for="showPassword">Password:</label>
                         <input id="showPassword" class="inputs" type="password" placeholder="password1234" minlength="8" required>
