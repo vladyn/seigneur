@@ -37,10 +37,12 @@ button[type=submit]{
     display: inline-block;
     font-size: 10px;
     position: absolute;
-    top: -12px;
-    left: 2px;
-    color: #ffffff;
-    background: linear-gradient(#08050f, #292a2d);
+    top: -16px;
+    left: 6px;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    background: linear-gradient(45deg, #d2fb48, #acf85a);
+    box-shadow: #290661 0 2px 3px;
 }
 
 .field-group > input {
