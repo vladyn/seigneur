@@ -1,0 +1,23 @@
+
+html, body
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+.test
+{
+    text-align: center;
+    background: linear-gradient(to right, #9348fb, #1a1a1a);
+    border: none;
+    color: white;
+    font-size: 50px;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
