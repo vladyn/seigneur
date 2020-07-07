@@ -11,13 +11,12 @@ function createWindow () {
     fullscreenable: false,
     darkTheme: true,
     hasShadow: false,
-    // alwaysOnTop: true,
+    alwaysOnTop: true,
     webPreferences: {
-      devTools: true,
+      devTools: false,
       nodeIntegration: true
     }
   })
-
 
   // and load the index.html of the app.
   browserWindow.loadFile('index.html')
@@ -50,3 +49,4 @@ app.on('activate', () => {
     createWindow()
   }
 })
+

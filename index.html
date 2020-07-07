@@ -16,25 +16,25 @@
             <div class="form">
                 <form action="">
                     <div class="field-group">
-                        <input class="inputs" id="nick" type="text" placeholder="BigBird016" minlength="4" required>
+                        <input id="nick" type="text" placeholder="BigBird016" minlength="4" required>
                         <label for="nick" id="randomize">Username:</label>
                     </div>
                     <div class="field-group">
-                        <input class="inputs" id="email" type="email" placeholder="user@site.com" minlength="6" required>
+                        <input id="email" type="email" placeholder="user@site.com" minlength="6" required>
                         <label for="email">Email:</label>
                     </div>
                     <div id="passwordArea">
                         <div class="field-group">
                             <label for="showPassword">Password:</label>
-                            <input id="showPassword" class="inputs" type="password" placeholder="password1234" minlength="8" required>
+                            <input id="showPassword" type="password" placeholder="password1234" minlength="8" required>
                         </div>
                         <label aria-label="show hide password" id="passToggle">
-                            <input class="inputs" type="checkbox" onclick="passwordShow()">
+                            <input  type="checkbox" onclick="passwordShow()">
                         </label>
                     </div>
 
                     <hr>
-                    <button class="container" id="submit" type="submit">Sign Up</button>
+                    <button onclick="myFunction()" class="container" id="submit" type="submit">Sign Up</button>
                 </form>
             </div>
         </section>
@@ -75,8 +75,8 @@
           "password1234",
           "qwertyuiop",
           "qwerty12",
-          "nooneusesazerty",
-          "strongpassword"
+          "no_one_uses_azerty",
+          "strong-password"
       ];
       const password = document.getElementById('showPassword');
       const randomPass = randomize(randomPassArray);
@@ -96,7 +96,17 @@
             }
         }
     </script>
+    <script>
+        function myFunction() {
+            const remote = require('electron').remote;
+            const BrowserWindow = remote.BrowserWindow;
 
+            const win = new BrowserWindow({width: 840, height: 490, frame: false, resizable: true, webPreferences: {devTools:false, nodeIntegration: true}});
+            win.loadFile('./chat.html');
+            window.close()
+        }
+    </script>
 </body>
 </html>
+
 

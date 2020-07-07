@@ -26,6 +26,8 @@ label,
 button[type=submit]{
     padding: 6px;
     border-radius: 5px;
+    -webkit-app-region: no-drag;
+
 }
 
 .field-group {
@@ -35,7 +37,7 @@ button[type=submit]{
 .field-group > label {
     text-transform: uppercase;
     display: inline-block;
-    font-size: 10px;
+    font-size: 8px;
     position: absolute;
     top: -16px;
     left: 6px;
@@ -69,17 +71,18 @@ input[type=text] {
     outline: none;
     border: 1px solid #ffffff;
     padding: 6px;
+    -webkit-app-region: no-drag;
 }
 
 input[type=password] { margin-bottom: 1em }
 
 input[type=text]:focus {
     border-radius: 50px;
-    margin-bottom: 1em;
     outline: none;
     border: 1px solid #ffffff;
     color: #243120;
     padding: 6px;
+    -webkit-app-region: no-drag;
 }
 .container
 {
