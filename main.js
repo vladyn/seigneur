@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const chat = require('./modules/chat');
 
 function createWindow () {
   // Create the browser window.
@@ -12,7 +13,7 @@ function createWindow () {
     hasShadow: false,
     // alwaysOnTop: true,
     webPreferences: {
-      devTools: false,
+      devTools: true,
       nodeIntegration: true
     }
   })
@@ -23,6 +24,9 @@ function createWindow () {
 
   // Open the DevTools.
   browserWindow.webContents.openDevTools()
+
+  // test the loaded module
+  chat('message');
 }
 
 // This method will be called when Electron has finished
