@@ -11,7 +11,7 @@ function createWindow () {
     fullscreenable: false,
     darkTheme: true,
     hasShadow: false,
-    alwaysOnTop: true,
+    alwaysOnTop: false,
     webPreferences: {
       devTools: false,
       nodeIntegration: true

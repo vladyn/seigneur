@@ -27,9 +27,20 @@ function passwordShow() {
 function identifyMe() {
   const BrowserWindow = remote.BrowserWindow;
 
-  const win = new BrowserWindow({width: 840, height: 490, frame: false, resizable: true, webPreferences: {devTools:false, nodeIntegration: true}});
+  const win = new BrowserWindow({
+    width: 840,
+    height: 490,
+    frame: false,
+    resizable: true,
+    webPreferences:
+      {
+        devTools:false,
+        nodeIntegration: true
+      }
+  });
   win.loadFile('./chat.html').then(() => {
-    window.close();
-  })
+    console.log('closed')
+  });
+  window.close();
 }
 
