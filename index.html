@@ -29,7 +29,7 @@
                             <input id="showPassword" class="inputs" type="password" placeholder="password1234" minlength="8" required>
                         </div>
                         <label aria-label="show hide password" id="passToggle">
-                            <input class="inputs" type="checkbox" onclick="passwordShow()">
+                            <input class="inputs" type="checkbox" id="passSwitch">
                         </label>
                     </div>
 
@@ -39,64 +39,7 @@
             </div>
         </section>
     </main>
-    <script>
-      const randomNickArray = [
-        "LazyBanana97",
-        "TheLegend",
-        "TheBestPersonToExist",
-        "ToiletDestroyer123",
-        "BlizzardLover7455",
-        "BigBird016",
-        "NotAHaloFan9",
-        "TheBestMechanicInSweden"
-      ];
-        const nick = document.getElementById('nick');
-        const randomNick = randomize(randomNickArray);
-        nick.setAttribute('placeholder', randomNick);
-
-      const randomEmailArray = [
-          "lazybanana@gmail.com",
-          "thelegend@epicguys.me",
-          "tbpte@hotmail.com",
-          "toiletobliterator@live.com",
-          "blizzardlover@gmail.com",
-          "bigbird@yahoo.com",
-          "notahalofan@xbox.com",
-          "swedishmechanic@mechs.com"
-      ];
-      const email = document.getElementById('email');
-      const randomEmail = randomize(randomEmailArray);
-      email.setAttribute('placeholder', randomEmail);
-
-      const randomPassArray = [
-          "ilovebananas12",
-          "haloisagoodgame69",
-          "watertwiceaday",
-          "password1234",
-          "qwertyuiop",
-          "qwerty12",
-          "nooneusesazerty",
-          "strongpassword"
-      ];
-      const password = document.getElementById('showPassword');
-      const randomPass = randomize(randomPassArray);
-      password.setAttribute('placeholder', randomPass);
-
-      function randomize(array) {
-          return array.sort(() => Math.random() - 0.5).pop();
-      }
-    </script>
-    <script>
-        function passwordShow() {
-            const passVisibility = document.getElementById("showPassword");
-            if (passVisibility.type === "password") {
-                passVisibility.type = "text";
-            } else {
-                passVisibility.type = "password";
-            }
-        }
-    </script>
-
+    <script>require('./modules')</script>
 </body>
 </html>
 
