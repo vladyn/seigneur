@@ -6,12 +6,12 @@ function createWindow () {
   const browserWindow = new BrowserWindow({
     width: 840,
     height: 490,
-    resizable: false,
+    resizable: true,
     frame: false,
     fullscreenable: false,
     darkTheme: true,
     hasShadow: false,
-    alwaysOnTop: true,
+    alwaysOnTop: false,
     webPreferences: {
       devTools: false,
       nodeIntegration: true
