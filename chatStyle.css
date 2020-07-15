@@ -5,6 +5,10 @@ html, body
     overflow: hidden;
 }
 
+body {
+    background: url('./assets/images/chat-background.svg') bottom center;
+}
+
 .test
 {
     text-align: center;
