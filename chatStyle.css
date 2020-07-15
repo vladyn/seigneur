@@ -6,7 +6,8 @@ html, body
 }
 
 body {
-    background: url('./assets/images/chat-background.svg') bottom center;
+    background: url('./assets/images/chat-background.svg');
+    background-size: cover;
 }
 
 .test
