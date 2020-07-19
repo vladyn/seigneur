@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const chat = require('./modules/chat');
 
 function createWindow () {
@@ -48,5 +48,9 @@ app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow()
   }
+})
+
+ipcMain.on('start-timer', _ => {
+  console.log('caught it! ')
 })
 
