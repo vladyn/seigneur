@@ -2,18 +2,19 @@
 html, body
 {
     height: 100%;
+    width: 40%;
     overflow: hidden;
 }
 
 body {
-    background: url('./assets/images/chat-background.svg');
+    background: url('./assets/images/chat_background.svg');
     background-size: cover;
 }
 
 .test
 {
     text-align: center;
-    background: linear-gradient(to right, #9348fb, #1a1a1a);
+    background: linear-gradient(to right, #e174d2, #e2c374);
     border: none;
     color: white;
     font-size: 50px;
@@ -26,3 +27,4 @@ body {
     justify-content: center;
     min-height: 100%;
 }
+

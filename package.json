@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/vladyn/seigneur#readme",
   "devDependencies": {
-    "electron": "^9.0.4"
+    "electron": "^9.1.0"
   },
   "dependencies": {
     "update-electron-app": "^1.5.0"

@@ -35,15 +35,15 @@ button[type=submit]{
 }
 
 .field-group > label {
+    transform: translateY(150px);
     text-transform: uppercase;
     display: inline-block;
     font-size: 8px;
     position: absolute;
     top: -16px;
     left: 6px;
-    color: black;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-    background: linear-gradient(45deg, #d2fb48, #acf85a);
+    color: white;
+    background: linear-gradient(45deg, #f502e2, #ff0275);
     box-shadow: #290661 0 2px 3px;
 }
 
@@ -51,27 +51,37 @@ button[type=submit]{
     display: block;
 }
 
-.field-group:hover
-{
-    transition: 0.5s;
-    background-position-x: 300%;
-    transform: translateX(-3px);
-}
 
 button[type=submit]:focus{
     padding: 6px;
     border-radius: 50px;
 }
+input[type=password] {
+    z-index: 9;
+}
+
 
 input[type=email],
 input[type=password],
 input[type=text] {
+    transform: translateY(150px);
+    height: 15px;
     border-radius: 50px;
     margin-bottom: 2em;
     outline: none;
     border: 1px solid #ffffff;
     padding: 6px;
     -webkit-app-region: no-drag;
+}
+
+#passwordLabel {
+    z-index: 11;
+}
+
+button[type=submit] {
+    transform: translateY(150px);
+    transform: scaleY(10px);
+    border-radius: 50px;
 }
 
 input[type=password] { margin-bottom: 1em }
@@ -82,20 +92,15 @@ input[type=text]:focus {
     border: 1px solid #ffffff;
     color: #243120;
     padding: 6px;
-    -webkit-app-region: no-drag;
 }
 .container
 {
-    background: linear-gradient(to right, #d2fb48,#acf85a,#d2fb48);
+    background: linear-gradient(to right, #f502e3, #ff0275,#d2fb48);
     background-size: 500px;
     transition: 0.5s;
     color: white;
 }
-.container:hover
-{
-    background-position-x: 300%;
-    transform: translateX(-3px);
-}
+
 .container:after
 {
     content: '';
@@ -174,8 +179,9 @@ input[type=text]:focus {
 
 #passToggle {
     position: absolute;
-    right: 2px;
+    right: 0;
     top: 0;
+    transform: translateY(150px);
 }
 
 .inputs
@@ -234,3 +240,6 @@ input, button, textarea, :focus {
     outline: none;
 }
 
+.welcome-splash {
+    transform: translateX(-6px) scaleX(1.02) translateY(-7px) scaleY(1.02);
+}
