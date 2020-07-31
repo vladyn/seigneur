@@ -13,7 +13,7 @@ function createWindow () {
     hasShadow: false,
     alwaysOnTop: false,
     webPreferences: {
-      devTools: false,
+      devTools: true,
       nodeIntegration: true
     }
   })
