@@ -34,7 +34,7 @@ function identifyMe() {
     resizable: true,
     webPreferences:
       {
-        devTools:false,
+        devTools: true,
         nodeIntegration: true
       }
   });
