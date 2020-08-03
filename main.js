@@ -7,7 +7,7 @@ function createWindow () {
     width: 840,
     height: 490,
     resizable: true,
-    frame: false,
+    frame: true,
     fullscreenable: false,
     darkTheme: true,
     hasShadow: false,

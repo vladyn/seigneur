@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "test",
-    "electron": "electron ."
+    "electron": "electron .",
+    "server": "node server"
   },
   "repository": {
     "type": "git",

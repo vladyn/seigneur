@@ -30,7 +30,7 @@ function identifyMe() {
   const win = new BrowserWindow({
     width: 840,
     height: 490,
-    frame: false,
+    frame: true,
     resizable: true,
     webPreferences:
       {
@@ -39,7 +39,7 @@ function identifyMe() {
       }
   });
   win.loadFile('./chat.html').then(() => {
-    console.log('closed')
+    win.webContents.openDevTools()
   });
   window.close();
 }
