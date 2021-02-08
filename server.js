@@ -7,3 +7,5 @@ server.run(port);
 setInterval(() => {
   server.simulateConnect('vlad');
 }, 1000)
+
+server.emit('start-typing')

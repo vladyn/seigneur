@@ -52,5 +52,10 @@ app.on('activate', () => {
 
 ipcMain.on('start-timer', _ => {
   console.log('caught it! ')
+  ipcMain.emit('start-typing')
+})
+
+ipcMain.on('start-typing', _ => {
+  console.log('...typing')
 })
 
