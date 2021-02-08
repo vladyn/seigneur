@@ -32,11 +32,18 @@ function socketInit(url) {
 }
 
 module.exports = (() => {
+  socketInit(serverURL)
   const helloTrigger = document.getElementById('hello')
+  const connedctTrigger = document.querySelector('#connect')
   const startTimer = _ => {
     ipc.send('start-timer')
-    socketInit(serverURL)
     helloTrigger.removeEventListener('click', startTimer)
   }
   helloTrigger.addEventListener('click', startTimer)
+  connedctTrigger.addEventListener('click', () => {
+    ipc.send('start-typing')
+  })
+
+  ipc.send('ch1', data => console.log(data))
+  ipc.send('ch1', 'vlad')
 })();
