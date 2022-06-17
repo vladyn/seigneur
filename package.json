@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/vladyn/seigneur#readme",
   "devDependencies": {
-    "electron": "^9.4.0"
+    "electron": "^15.5.5"
   },
   "dependencies": {
     "express": "^4.17.1",
