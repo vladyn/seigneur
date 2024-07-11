@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "express": "^4.17.3",
-    "socket.io": "^2.5.0",
+    "socket.io": "^4.7.5",
     "update-electron-app": "^1.5.0"
   }
 }
